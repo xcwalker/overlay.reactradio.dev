@@ -1,4 +1,4 @@
-# overlay.reactradio.dev
+# react.radio.overlay
 A customisable overlay for stations on reactradio
 
 ## Planned Features
