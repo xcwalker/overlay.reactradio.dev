@@ -1,0 +1,98 @@
+.controller {
+  --_button-width: 25px;
+
+  /* sizing */
+  width: fit-content;
+
+  /* grid */
+  display: grid;
+  grid-template-rows: var(--_button-width) 1fr var(--_button-width);
+  grid-template-columns: var(--_button-width) 1fr var(--_button-width);
+  gap: 0.25rem;
+}
+
+.center {
+  /* sizing */
+  width: 250px;
+  aspect-ratio: 16/9;
+  padding: 0.25rem;
+
+  /* grid */
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.25rem;
+
+  /* styling */
+  border-radius: 0.5rem;
+  border: 4px solid var(--text-400);
+}
+
+.position,
+.direction {
+  /* flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* styling */
+  border-radius: 0.25rem;
+  border: 2px solid var(--text-300);
+  background-color: transparent;
+  color: var(--text);
+}
+
+.selected {
+  /* styling */
+  border-color: var(--accent-300);
+  background-color: var(--accent-100);
+}
+
+.position:hover,
+.position:focus-visible,
+.direction:hover,
+.direction:focus-visible {
+  /* styling */
+  background-color: var(--background-200);
+}
+
+.position {
+  /* sizing */
+  width: var(--_button-width);
+  height: var(--_button-width);
+}
+
+.center > .position:nth-child(2) {
+  margin-inline: auto;
+}
+
+.center > .position:nth-child(3) {
+  margin-left: auto;
+}
+
+.center > .position:nth-child(4) {
+  margin-block: auto;
+}
+
+.center > .position:nth-child(5) {
+  margin: auto;
+}
+
+.center > .position:nth-child(6) {
+  margin-left: auto;
+  margin-block: auto;
+}
+
+.center > .position:nth-child(7) {
+  margin-top: auto;
+}
+
+.center > .position:nth-child(8) {
+  margin-top: auto;
+  margin-inline: auto;
+}
+
+.center > .position:nth-child(9) {
+  margin-top: auto;
+  margin-left: auto;
+}

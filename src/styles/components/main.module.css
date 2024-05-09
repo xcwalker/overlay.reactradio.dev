@@ -1,0 +1,14 @@
+.main {
+  /* spacing */
+  padding-bottom: 2rem;
+
+  /* flex */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main > section {
+  max-width: var(--content-max-width);
+  margin-inline: auto;
+}

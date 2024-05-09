@@ -1,0 +1,14 @@
+.primaryButton {
+  /* styling */
+  color: var(--background) !important;
+  background-color: var(--primary) !important;
+  
+  /* transition */
+  transition: background-color 75ms ease-in-out;
+}
+
+.primaryButton:hover,
+.primaryButton:focus-visible {
+  /* styling */
+  background-color: var(--text) !important;
+}
